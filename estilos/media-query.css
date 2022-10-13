@@ -10,6 +10,7 @@
 
     section#login{
         width: 80vw;
+        height: 400px;
     }
 
     section#login > div#imagem{
@@ -19,6 +20,10 @@
     }
 
     section#login > div#formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
         float: right;
         width: 70%;
     }
@@ -31,6 +36,7 @@
 
     section#login{
         width: 950px;
+        height: 400px;
     }
 
     section#login > div#imagem{
@@ -39,11 +45,22 @@
         height: 100%;
     }
 
+    section#login > div#formulario{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     div#formulario > h1{
         font-size: 2em;
     }
 
     div#formulario > p{
-        font-size: 1.3em;
+        font-size: 1em;
+    }
+
+    div.campo > input{
+        width: calc(100% - 44.5px);
     }
 }
